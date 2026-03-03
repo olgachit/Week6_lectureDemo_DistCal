@@ -14,7 +14,7 @@ COPY . /app/
 RUN mvn package
 
 # Run the main class (assuming your application has a main class)
-CMD ["java", "-jar", "TravelCar.jar"]
+CMD ["java", "-jar", "target/TravelCal-1.0-SNAPSHOT.jar"]
 
 
 # to build: docker build -t javamvn .
