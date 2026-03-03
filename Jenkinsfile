@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         PATH = "${env.PATH};/Applications/Utilities/Terminal.app" // Update the PATH to include the directory of cmd.exe
-        GIT_CREDENTIALS = credentials('olgachi')
+        GIT_CREDENTIALS = credentials('olgachit')
     }
 
     stages {
