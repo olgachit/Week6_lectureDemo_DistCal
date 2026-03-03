@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', credentialsId: 'olgachi', url: 'https://github.com/olgachit/Week6_lectureDemo_DistCal.git'
+                git branch: 'master', credentialsId: 'olgachit', url: 'https://github.com/olgachit/Week6_lectureDemo_DistCal.git'
             }
         }
         stage('Build') {
