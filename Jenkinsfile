@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        PATH = "${env.PATH};/Applications/Utilities/Terminal.app" // Update the PATH to include the directory of cmd.exe
+        PATH = "${env.PATH}:/Applications/Utilities/Terminal.app" // Update the PATH to include the directory of cmd.exe
         GIT_CREDENTIALS = credentials('olgachit')
     }
 
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
         stage('Test') {
